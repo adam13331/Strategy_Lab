@@ -1,0 +1,34 @@
+[project]
+name = "sqx"
+version = "0.1.0"
+description = "Local strategy research lab: data, generation, 1-minute execution backtests"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "duckdb>=1.1",
+    "pandas>=2.2",
+    "numpy>=2.1",
+    "pyarrow>=18.0",
+    "numba>=0.61",
+    "typer>=0.15",
+    "python-multipart>=0.0.12",
+]
+
+[project.scripts]
+sqx = "sqx.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "httpx>=0.28",
+]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

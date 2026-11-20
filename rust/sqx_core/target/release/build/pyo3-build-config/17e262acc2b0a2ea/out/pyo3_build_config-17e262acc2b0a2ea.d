@@ -1,0 +1,14 @@
+/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/17e262acc2b0a2ea/out/pyo3_build_config-17e262acc2b0a2ea.d: /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/lib.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/errors.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/impl_.rs /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config-file.txt /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config.txt
+
+/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/17e262acc2b0a2ea/out/libpyo3_build_config-17e262acc2b0a2ea.rlib: /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/lib.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/errors.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/impl_.rs /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config-file.txt /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config.txt
+
+/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/17e262acc2b0a2ea/out/libpyo3_build_config-17e262acc2b0a2ea.rmeta: /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/lib.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/errors.rs /home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/impl_.rs /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config-file.txt /home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config.txt
+
+/home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/lib.rs:
+/home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/errors.rs:
+/home/andris/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.22.6/src/impl_.rs:
+/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config-file.txt:
+/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out/pyo3-build-config.txt:
+
+# env-dep:CARGO_PKG_VERSION=0.22.6
+# env-dep:OUT_DIR=/home/andris/Documents/Projects/SQX/rust/sqx_core/target/release/build/pyo3-build-config/5cd0780abf94ddf6/out

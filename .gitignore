@@ -1,0 +1,11 @@
+data/raw/*.csv
+data/parquet/
+data/cache/
+data/results/
+data/*.duckdb
+web/node_modules/
+web/dist/
+__pycache__/
+.venv/
+rust/sqx-gen/target/
+bench/rust/cases/

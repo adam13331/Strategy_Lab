@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: sqx
+Version: 0.1.0
+Summary: Local strategy research lab: data, generation, 1-minute execution backtests
+Requires-Python: >=3.12
+Requires-Dist: fastapi>=0.115
+Requires-Dist: uvicorn[standard]>=0.32
+Requires-Dist: pydantic>=2.9
+Requires-Dist: pydantic-settings>=2.6
+Requires-Dist: duckdb>=1.1
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=2.1
+Requires-Dist: pyarrow>=18.0
+Requires-Dist: numba>=0.61
+Requires-Dist: typer>=0.15
+Requires-Dist: python-multipart>=0.0.12

@@ -1,0 +1,692 @@
+{
+  "symbols": [
+    "USDJPY"
+  ],
+  "timeframe": "H4",
+  "direction": "both",
+  "opposite_signal": "ignore_or_reverse",
+  "stop_loss": {
+    "mode": "may",
+    "type": "atr",
+    "pips_min": 20,
+    "pips_max": 80,
+    "pips_step": 1,
+    "atr_period_min": 7,
+    "atr_period_max": 21,
+    "atr_period_step": 2,
+    "atr_mult_min": 1.5,
+    "atr_mult_max": 4.0,
+    "atr_mult_step": 0.25
+  },
+  "take_profit": {
+    "mode": "may",
+    "type": "fixed",
+    "pips_min": 20,
+    "pips_max": 80,
+    "pips_step": 1,
+    "atr_period_min": 7,
+    "atr_period_max": 21,
+    "atr_period_step": 2,
+    "atr_mult_min": 1.5,
+    "atr_mult_max": 4.0,
+    "atr_mult_step": 0.25
+  },
+  "trailing": {
+    "mode": "none",
+    "atr_period_min": 7,
+    "atr_period_max": 21,
+    "atr_period_step": 2,
+    "atr_mult_min": 1.5,
+    "atr_mult_max": 4.0,
+    "atr_mult_step": 0.25
+  },
+  "max_entry_indicators": 3,
+  "max_exit_indicators": 1,
+  "indicators": {
+    "sma": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "ema": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "wma": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "hma": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 10.0,
+          "max": 100.0,
+          "step": 2.0
+        }
+      }
+    },
+    "dema": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "tema": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "kama": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 50.0,
+          "step": 1.0
+        },
+        "fast": {
+          "min": 2.0,
+          "max": 10.0,
+          "step": 1.0
+        },
+        "slow": {
+          "min": 10.0,
+          "max": 60.0,
+          "step": 5.0
+        }
+      }
+    },
+    "vwma": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "macd": {
+      "enabled": true,
+      "params": {
+        "fast": {
+          "min": 5.0,
+          "max": 30.0,
+          "step": 1.0
+        },
+        "slow": {
+          "min": 15.0,
+          "max": 60.0,
+          "step": 1.0
+        },
+        "signal": {
+          "min": 3.0,
+          "max": 20.0,
+          "step": 1.0
+        }
+      }
+    },
+    "adx": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 7.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "aroon": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 50.0,
+          "step": 1.0
+        }
+      }
+    },
+    "supertrend": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 30.0,
+          "step": 1.0
+        },
+        "mult": {
+          "min": 1.0,
+          "max": 6.0,
+          "step": 0.25
+        }
+      }
+    },
+    "psar": {
+      "enabled": true,
+      "params": {
+        "step": {
+          "min": 0.01,
+          "max": 0.1,
+          "step": 0.01
+        },
+        "max_step": {
+          "min": 0.1,
+          "max": 0.5,
+          "step": 0.05
+        }
+      }
+    },
+    "ichimoku": {
+      "enabled": true,
+      "params": {
+        "tenkan": {
+          "min": 5.0,
+          "max": 20.0,
+          "step": 1.0
+        },
+        "kijun": {
+          "min": 10.0,
+          "max": 60.0,
+          "step": 1.0
+        },
+        "senkou": {
+          "min": 20.0,
+          "max": 120.0,
+          "step": 2.0
+        }
+      }
+    },
+    "alligator": {
+      "enabled": true,
+      "params": {
+        "jaw": {
+          "min": 5.0,
+          "max": 30.0,
+          "step": 1.0
+        },
+        "teeth": {
+          "min": 4.0,
+          "max": 20.0,
+          "step": 1.0
+        },
+        "lips": {
+          "min": 3.0,
+          "max": 15.0,
+          "step": 1.0
+        }
+      }
+    },
+    "vortex": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "rsi": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "stochastic": {
+      "enabled": true,
+      "params": {
+        "k": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        },
+        "d": {
+          "min": 1.0,
+          "max": 10.0,
+          "step": 1.0
+        },
+        "smooth": {
+          "min": 1.0,
+          "max": 10.0,
+          "step": 1.0
+        }
+      }
+    },
+    "stochrsi": {
+      "enabled": true,
+      "params": {
+        "rsi_period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        },
+        "stoch_period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        },
+        "k": {
+          "min": 1.0,
+          "max": 10.0,
+          "step": 1.0
+        },
+        "d": {
+          "min": 1.0,
+          "max": 10.0,
+          "step": 1.0
+        }
+      }
+    },
+    "cci": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "williams_r": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "mfi": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "roc": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 3.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "momentum": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 3.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "tsi": {
+      "enabled": true,
+      "params": {
+        "long": {
+          "min": 10.0,
+          "max": 50.0,
+          "step": 1.0
+        },
+        "short": {
+          "min": 5.0,
+          "max": 30.0,
+          "step": 1.0
+        }
+      }
+    },
+    "ultimate": {
+      "enabled": true,
+      "params": {
+        "p1": {
+          "min": 3.0,
+          "max": 15.0,
+          "step": 1.0
+        },
+        "p2": {
+          "min": 7.0,
+          "max": 30.0,
+          "step": 1.0
+        },
+        "p3": {
+          "min": 14.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "awesome": {
+      "enabled": true,
+      "params": {
+        "fast": {
+          "min": 2.0,
+          "max": 15.0,
+          "step": 1.0
+        },
+        "slow": {
+          "min": 20.0,
+          "max": 80.0,
+          "step": 2.0
+        }
+      }
+    },
+    "fisher": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "demarker": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "trix": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        },
+        "signal": {
+          "min": 3.0,
+          "max": 20.0,
+          "step": 1.0
+        }
+      }
+    },
+    "atr": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "bbands": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 10.0,
+          "max": 80.0,
+          "step": 1.0
+        },
+        "std": {
+          "min": 1.0,
+          "max": 4.0,
+          "step": 0.25
+        }
+      }
+    },
+    "keltner": {
+      "enabled": true,
+      "params": {
+        "ema_period": {
+          "min": 5.0,
+          "max": 80.0,
+          "step": 1.0
+        },
+        "atr_period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        },
+        "mult": {
+          "min": 0.5,
+          "max": 5.0,
+          "step": 0.25
+        }
+      }
+    },
+    "donchian": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "stddev": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 80.0,
+          "step": 1.0
+        }
+      }
+    },
+    "histvol": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 10.0,
+          "max": 80.0,
+          "step": 1.0
+        }
+      }
+    },
+    "obv": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "ad": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "cmf": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 60.0,
+          "step": 1.0
+        }
+      }
+    },
+    "volume": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "force": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 3.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "breakout": {
+      "enabled": true,
+      "params": {
+        "lookback": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "patterns": {
+      "enabled": true,
+      "params": {
+        "lookback": {
+          "min": 2.0,
+          "max": 10.0,
+          "step": 1.0
+        },
+        "body_ratio": {
+          "min": 0.05,
+          "max": 0.3,
+          "step": 0.05
+        },
+        "wick_ratio": {
+          "min": 1.0,
+          "max": 4.0,
+          "step": 0.25
+        }
+      }
+    },
+    "higher": {
+      "enabled": true,
+      "params": {
+        "lookback": {
+          "min": 2.0,
+          "max": 10.0,
+          "step": 1.0
+        }
+      }
+    },
+    "body": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    },
+    "range": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 100.0,
+          "step": 1.0
+        }
+      }
+    },
+    "gap": {
+      "enabled": true,
+      "params": {
+        "period": {
+          "min": 5.0,
+          "max": 40.0,
+          "step": 1.0
+        }
+      }
+    }
+  },
+  "session": {
+    "start_hour": 0,
+    "end_hour": 23,
+    "close_at_end": true,
+    "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "risk": {
+    "sizing": "fixed_lot",
+    "fixed_lot": 0.1,
+    "risk_percent": 1.0,
+    "leverage": 30.0,
+    "balance": 10000.0,
+    "spread_pips": 0.3,
+    "commission_per_lot": 0.0,
+    "slippage_pips": 0.0
+  },
+  "acceptance": {
+    "is_gates": {
+      "min_trades": 20,
+      "min_sharpe": 0.1,
+      "max_stagnation_days": 1500,
+      "min_return_dd": 0.2,
+      "max_drawdown_pct": 100.0,
+      "min_profit_factor": 0.0,
+      "min_win_rate": 0.0
+    },
+    "oos_gates": {
+      "min_trades": 10,
+      "min_sharpe": 0.05,
+      "max_stagnation_days": 1700,
+      "min_return_dd": 0.1,
+      "max_drawdown_pct": 100.0,
+      "min_profit_factor": 0.0,
+      "min_win_rate": 0.0
+    }
+  },
+  "autocorrelation": {
+    "enabled": true,
+    "threshold": 0.95,
+    "method": "pearson"
+  },
+  "oos_pct": 40,
+  "target_accepted": 200,
+  "seed": 42
+}

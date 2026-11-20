@@ -1,0 +1,14 @@
+[package]
+name = "sqx-gen"
+version = "0.1.0"
+edition = "2021"
+description = "Rust port of the SQX strategy generation engine (sampling, signals, M1 simulation, metrics, gates)"
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = true
+panic = "abort"

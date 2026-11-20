@@ -1,0 +1,307 @@
+{
+  "generated_at": "2026-11-19T13:15:54+00:00",
+  "env": {
+    "host": "Linux x86_64",
+    "cpu_count": 4,
+    "rust": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "m1_rows": 4392425,
+    "tf_rows": 146979,
+    "days": 3687
+  },
+  "specs": 60,
+  "python": {
+    "specs": 60,
+    "seconds": 75.55283723000002,
+    "attempts_per_sec": 0.7941462187230157,
+    "per_attempt_ms": 1259.2139538333336,
+    "accepted": 5,
+    "accept_rate": 0.08333333333333333,
+    "reasons": {
+      "is:min_sharpe": 42,
+      "is:min_trades": 8,
+      "accepted": 5,
+      "oos:min_sharpe": 3,
+      "is:stagnation": 2
+    }
+  },
+  "rust": {
+    "phases": {
+      "indicator_computes_per_attempt": 7.1,
+      "kernel_ms": 51.1,
+      "metrics_ms": 0.2,
+      "signals_ms": 56.3,
+      "total_ms": 119.9
+    },
+    "threads": {
+      "1": {
+        "attempts_per_sec": 8.34,
+        "best_seconds": 7.195500757,
+        "workers": 1
+      },
+      "2": {
+        "attempts_per_sec": 12.72,
+        "best_seconds": 4.716733035,
+        "workers": 2
+      },
+      "3": {
+        "attempts_per_sec": 14.47,
+        "best_seconds": 4.145683413,
+        "workers": 3
+      },
+      "4": {
+        "attempts_per_sec": 15.01,
+        "best_seconds": 3.99626709,
+        "workers": 4
+      }
+    },
+    "accept": {
+      "accepted": 5,
+      "accept_rate": 0.08333333333333333,
+      "reasons": {
+        "is:min_sharpe": 42,
+        "is:min_trades": 8,
+        "accepted": 5,
+        "oos:min_sharpe": 3,
+        "is:stagnation": 2
+      }
+    }
+  },
+  "indicators": {
+    "records": 159,
+    "arrays": 261,
+    "pass": true,
+    "max_abs": 3.466105216176629e-07,
+    "failures": []
+  },
+  "parity": {
+    "indicators": {
+      "records": 159,
+      "arrays": 261,
+      "pass": true,
+      "max_abs": 3.466105216176629e-07,
+      "failures": []
+    },
+    "stage1_replay": {
+      "specs": 255,
+      "exact": 221,
+      "exact_share": 0.8667,
+      "boundary": 34,
+      "broken": 0,
+      "max_signal_delta": 32,
+      "max_sharpe_delta": 0.1205,
+      "max_equity_delta": 28.565883,
+      "boundary_examples": [
+        {
+          "kind": "boundary",
+          "trade_delta": 3,
+          "signal_delta": 14,
+          "equity_delta": 28.565883,
+          "sharpe_delta": 0.1205,
+          "net_return_delta": 0.2857,
+          "idx": 249
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": -3,
+          "signal_delta": 7,
+          "equity_delta": 25.915274,
+          "sharpe_delta": 0.0695,
+          "net_return_delta": 0.1569,
+          "idx": 160
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": -1,
+          "signal_delta": 1,
+          "equity_delta": 8.902343,
+          "sharpe_delta": 0.0202,
+          "net_return_delta": 0.089,
+          "idx": 73
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": -1,
+          "signal_delta": 1,
+          "equity_delta": 20.91114,
+          "sharpe_delta": 0.0187,
+          "net_return_delta": 0.2091,
+          "idx": 178
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": -1,
+          "signal_delta": 0,
+          "equity_delta": 13.631889,
+          "sharpe_delta": 0.0174,
+          "net_return_delta": 0.1473,
+          "idx": 165
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": -3,
+          "signal_delta": 4,
+          "equity_delta": 28.250127,
+          "sharpe_delta": 0.0135,
+          "net_return_delta": 0.2825,
+          "idx": 214
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 1,
+          "equity_delta": 7.13653,
+          "sharpe_delta": 0.0107,
+          "net_return_delta": 0.053,
+          "idx": 108
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 0,
+          "equity_delta": 13.435199,
+          "sharpe_delta": 0.0095,
+          "net_return_delta": 0.0987,
+          "idx": 37
+        }
+      ]
+    },
+    "stage2_sampler": {
+      "specs": 60,
+      "exact": 51,
+      "exact_share": 0.85,
+      "boundary": 9,
+      "broken": 0,
+      "max_signal_delta": 11,
+      "max_sharpe_delta": 0.022,
+      "max_equity_delta": 21.298451,
+      "boundary_examples": [
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 0,
+          "equity_delta": 21.298451,
+          "sharpe_delta": 0.022,
+          "net_return_delta": 0.213,
+          "idx": 38
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 2,
+          "equity_delta": 10.241238,
+          "sharpe_delta": 0.0057,
+          "net_return_delta": 0.1024,
+          "idx": 18
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 11,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 0
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 0,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 27
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 1,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 34
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 0,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 37
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 7,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 44
+        },
+        {
+          "kind": "boundary",
+          "trade_delta": 0,
+          "signal_delta": 1,
+          "equity_delta": 0.0,
+          "sharpe_delta": 0.0,
+          "net_return_delta": 0.0,
+          "idx": 48
+        }
+      ]
+    },
+    "thresholds": {
+      "exact_share": 0.8,
+      "max_sharpe_delta": 0.25,
+      "max_signal_fraction": 0.0001
+    },
+    "pass": true
+  },
+  "python_baseline": {
+    "file": "generation-20261119-120418.json",
+    "backtest": {
+      "attempts": 24,
+      "compile_ms": 959.0,
+      "per_attempt_cold_ms": 1281.9,
+      "per_attempt_warm_ms": 369.9,
+      "signals_ms": 650.8,
+      "simulate_ms": 50.0,
+      "overhead_ms": 581.1,
+      "indicator_computes_per_attempt": 6.8,
+      "cache_entries": 138
+    },
+    "threads": {
+      "cpu_count": 4,
+      "workers": 3,
+      "serial_attempts_per_sec": 0.8,
+      "pooled_attempts_per_sec": 0.77,
+      "scaling": 0.96
+    },
+    "generation": {
+      "attempts": 40,
+      "accepted": 2,
+      "accept_rate": 0.05,
+      "attempts_per_sec": 0.72,
+      "elapsed_s": 55.23,
+      "reject_reasons": {
+        "is:min_sharpe": 22,
+        "is:min_trades": 8,
+        "oos:min_sharpe": 5,
+        "is:stagnation": 3,
+        "accepted": 2
+      }
+    },
+    "context": {
+      "context_ms": 2822.2,
+      "m1_rows": 4392425,
+      "tf_rows": 146979,
+      "days": 3687,
+      "years": 11.79
+    },
+    "persist": {
+      "batch": 25,
+      "batch_ms": 1346.754,
+      "update_ms": 44.574,
+      "per_attempt_ms": 53.8702
+    }
+  }
+}

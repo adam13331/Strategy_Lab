@@ -1,0 +1,6 @@
+{
+  "max_ram_mb": 0,
+  "performance": "balanced",
+  "workers": 0,
+  "clear_cache_after_run": true
+}

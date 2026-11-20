@@ -1,0 +1,7 @@
+pyproject.toml
+src/sqx.egg-info/PKG-INFO
+src/sqx.egg-info/SOURCES.txt
+src/sqx.egg-info/dependency_links.txt
+src/sqx.egg-info/entry_points.txt
+src/sqx.egg-info/requires.txt
+src/sqx.egg-info/top_level.txt

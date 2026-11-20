@@ -1,0 +1,314 @@
+{
+  "generated_at": "2026-11-19T11:04:18+00:00",
+  "env": {
+    "host": "Linux x86_64",
+    "cpu_count": 4,
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "numba": "0.68.1",
+    "duckdb": "2.0.0",
+    "symbol": "USDJPY",
+    "timeframe": "M30",
+    "reps": 2,
+    "indicators": 53
+  },
+  "context": {
+    "context_ms": 2822.2,
+    "m1_rows": 4392425,
+    "tf_rows": 146979,
+    "days": 3687,
+    "years": 11.79
+  },
+  "sampling": {
+    "per_spec_ms": 0.056,
+    "specs_per_sec": 17851.6,
+    "sample_and_hash_ms": 0.056
+  },
+  "backtest": {
+    "attempts": 24,
+    "compile_ms": 959.0,
+    "per_attempt_cold_ms": 1281.9,
+    "per_attempt_warm_ms": 369.9,
+    "signals_ms": 650.8,
+    "simulate_ms": 50.0,
+    "overhead_ms": 581.1,
+    "indicator_computes_per_attempt": 6.8,
+    "cache_entries": 138
+  },
+  "generation": {
+    "attempts": 40,
+    "accepted": 2,
+    "accept_rate": 0.05,
+    "attempts_per_sec": 0.72,
+    "elapsed_s": 55.23,
+    "reject_reasons": {
+      "is:min_sharpe": 22,
+      "is:min_trades": 8,
+      "oos:min_sharpe": 5,
+      "is:stagnation": 3,
+      "accepted": 2
+    }
+  },
+  "threads": {
+    "cpu_count": 4,
+    "workers": 3,
+    "serial_attempts_per_sec": 0.8,
+    "pooled_attempts_per_sec": 0.77,
+    "scaling": 0.96
+  },
+  "persist": {
+    "batch": 25,
+    "batch_ms": 1346.754,
+    "update_ms": 44.574,
+    "per_attempt_ms": 53.8702
+  },
+  "projection": {
+    "assumptions": {
+      "sampling": [
+        3.0,
+        8.0,
+        15.0
+      ],
+      "signals": [
+        2.5,
+        5.0,
+        10.0
+      ],
+      "simulate": [
+        1.0,
+        1.15,
+        1.35
+      ],
+      "overhead": [
+        3.0,
+        6.0,
+        12.0
+      ],
+      "persist": [
+        1.0,
+        1.3,
+        2.0
+      ]
+    },
+    "baseline": {
+      "sampling": 0.056,
+      "signals": 650.8,
+      "simulate": 50.0,
+      "overhead": 581.1,
+      "persist": 53.87,
+      "total_ms": 1335.83
+    },
+    "scenarios": {
+      "A. hot path only (signals + metrics in Rust)": {
+        "keys": [
+          "signals",
+          "overhead"
+        ],
+        "rows": [
+          {
+            "case": "low",
+            "per_attempt_ms": 557.9,
+            "speedup": 2.39,
+            "attempts_per_sec": 1.79,
+            "pooled_now_attempts_per_sec": 1.72,
+            "pooled_rust_attempts_per_sec": 4.84,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "37.2 min",
+            "wall_clock_pooled": "13.8 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.06,
+              "signals": 260.32,
+              "simulate": 50.0,
+              "overhead": 193.7,
+              "persist": 53.87
+            }
+          },
+          {
+            "case": "mid",
+            "per_attempt_ms": 330.9,
+            "speedup": 4.04,
+            "attempts_per_sec": 3.02,
+            "pooled_now_attempts_per_sec": 2.9,
+            "pooled_rust_attempts_per_sec": 8.16,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "22.1 min",
+            "wall_clock_pooled": "8.2 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.06,
+              "signals": 130.16,
+              "simulate": 50.0,
+              "overhead": 96.85,
+              "persist": 53.87
+            }
+          },
+          {
+            "case": "high",
+            "per_attempt_ms": 217.4,
+            "speedup": 6.14,
+            "attempts_per_sec": 4.6,
+            "pooled_now_attempts_per_sec": 4.42,
+            "pooled_rust_attempts_per_sec": 12.42,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "14.5 min",
+            "wall_clock_pooled": "5.4 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.06,
+              "signals": 65.08,
+              "simulate": 50.0,
+              "overhead": 48.43,
+              "persist": 53.87
+            }
+          }
+        ]
+      },
+      "B. attempt loop in Rust (sample + signals + sim + metrics)": {
+        "keys": [
+          "sampling",
+          "signals",
+          "simulate",
+          "overhead"
+        ],
+        "rows": [
+          {
+            "case": "low",
+            "per_attempt_ms": 557.9,
+            "speedup": 2.39,
+            "attempts_per_sec": 1.79,
+            "pooled_now_attempts_per_sec": 1.72,
+            "pooled_rust_attempts_per_sec": 4.84,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "37.2 min",
+            "wall_clock_pooled": "13.8 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.02,
+              "signals": 260.32,
+              "simulate": 50.0,
+              "overhead": 193.7,
+              "persist": 53.87
+            }
+          },
+          {
+            "case": "mid",
+            "per_attempt_ms": 324.4,
+            "speedup": 4.12,
+            "attempts_per_sec": 3.08,
+            "pooled_now_attempts_per_sec": 2.96,
+            "pooled_rust_attempts_per_sec": 8.32,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "21.6 min",
+            "wall_clock_pooled": "8.0 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.01,
+              "signals": 130.16,
+              "simulate": 43.48,
+              "overhead": 96.85,
+              "persist": 53.87
+            }
+          },
+          {
+            "case": "high",
+            "per_attempt_ms": 204.4,
+            "speedup": 6.53,
+            "attempts_per_sec": 4.89,
+            "pooled_now_attempts_per_sec": 4.7,
+            "pooled_rust_attempts_per_sec": 13.21,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "13.6 min",
+            "wall_clock_pooled": "5.0 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.0,
+              "signals": 65.08,
+              "simulate": 37.04,
+              "overhead": 48.43,
+              "persist": 53.87
+            }
+          }
+        ]
+      },
+      "C. attempt loop + persistence in Rust": {
+        "keys": [
+          "sampling",
+          "signals",
+          "simulate",
+          "overhead",
+          "persist"
+        ],
+        "rows": [
+          {
+            "case": "low",
+            "per_attempt_ms": 557.9,
+            "speedup": 2.39,
+            "attempts_per_sec": 1.79,
+            "pooled_now_attempts_per_sec": 1.72,
+            "pooled_rust_attempts_per_sec": 4.84,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "37.2 min",
+            "wall_clock_pooled": "13.8 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.02,
+              "signals": 260.32,
+              "simulate": 50.0,
+              "overhead": 193.7,
+              "persist": 53.87
+            }
+          },
+          {
+            "case": "mid",
+            "per_attempt_ms": 311.9,
+            "speedup": 4.28,
+            "attempts_per_sec": 3.21,
+            "pooled_now_attempts_per_sec": 3.08,
+            "pooled_rust_attempts_per_sec": 8.66,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "20.8 min",
+            "wall_clock_pooled": "7.7 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.01,
+              "signals": 130.16,
+              "simulate": 43.48,
+              "overhead": 96.85,
+              "persist": 41.44
+            }
+          },
+          {
+            "case": "high",
+            "per_attempt_ms": 177.5,
+            "speedup": 7.53,
+            "attempts_per_sec": 5.63,
+            "pooled_now_attempts_per_sec": 5.41,
+            "pooled_rust_attempts_per_sec": 15.21,
+            "attempts_for_200_accepted": 4000,
+            "wall_clock": "11.8 min",
+            "wall_clock_pooled": "4.4 min",
+            "base_wall_clock": "89.1 min",
+            "components": {
+              "sampling": 0.0,
+              "signals": 65.08,
+              "simulate": 37.04,
+              "overhead": 48.43,
+              "persist": 26.94
+            }
+          }
+        ]
+      }
+    },
+    "threads": {
+      "measured_scaling": 0.96,
+      "workers": 3,
+      "rust_scaling_assumed": 2.7
+    },
+    "amddahl": {
+      "kernel_share_pct": 3.7,
+      "max_attempt_speedup_if_kernel_unchanged": 27.03
+    }
+  }
+}
